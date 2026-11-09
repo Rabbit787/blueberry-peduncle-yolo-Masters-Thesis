@@ -1,0 +1,8 @@
+ultralytics
+opencv-python
+numpy
+pandas
+scipy
+shapely
+matplotlib
+pyyaml
