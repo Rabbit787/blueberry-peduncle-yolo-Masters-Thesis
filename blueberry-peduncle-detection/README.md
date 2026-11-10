@@ -36,7 +36,7 @@ A YOLO26n detector is trained on bounding-box annotations exported from Roboflow
 
 ### Step 2 — Fruit cluster detection (density cut-off)
 
-Ripe fruit centers are clustered with Ward's method. Instead of cutting the dendrogram at a single global distance, the merge tree is **traversed from the root**, and each node is accepted as a cluster only if its fruits fill their convex hull densely enough.
+Ripe fruit centers are clustered with Ward's method. Instead of cutting the dendrogram at a single global distance, the merge tree is **traversed from the root**, and each node is accepted as a cluster only if its fruits fill their convex hull densely enough. This method is implemented because depth information is not available in the sample pictures. Tried to estimate the depth by the sizes of the bbx of the fruit. 
 
 <table>
 <tr>
